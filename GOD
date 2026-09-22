@@ -1,0 +1,67 @@
+ACHP-01-EXEC — Pass 2 Result
+Execution boundary
+This pass evaluated the current workspace against the validation input contract in ACHP_OTE_Validation_Payload_Specification.md. It did not generate a candidate payload, hash, signature, lineage proof, vector value, or registry result. Missing evidence was treated as blocking, not as passing alignment.
+
+Field
+Value
+Operator
+ACHP-01-EXEC
+Pass
+2
+Execution mode
+EVIDENCE_STATUS_HOLD
+Executed at
+2026-08-13T23:37:26.067306Z
+Specification hash
+sha256:cd36c16b486c55371ee5b610060ecd23a4c21172968106a9321ef43f59e95b9d
+Populated canonical JSON artifacts discovered
+0
+Template placeholders in specification
+150
+
+Harmonization checks
+Condition
+Result
+Reason
+LineageComplete
+INDETERMINATE
+No populated canonical Lineage/Commit Block was discovered.
+TriadicAligned
+INDETERMINATE
+No populated ACHP/OTE vector pair, normalization proof, or metric transcript was discovered.
+NonForking
+INDETERMINATE
+No authoritative Living Record index snapshot and uniqueness query result were provided.
+SubstrateIndependent
+INDETERMINATE
+No populated canonical artifact, dependency-zero manifest, or prohibited-surface scan report was discovered.
+
+Verification vector and torsion
+The ACHP vector, OTE vector, and exact inner product are not computable because no populated same-profile vector pair was supplied. The residual-torsion result is therefore BLOCKING_UNKNOWN, not zero.
+
+Measure
+Result
+V_ACHP
+NOT_COMPUTABLE
+V_OTE
+NOT_COMPUTABLE
+V_ACHP · V_OTE
+NOT_COMPUTABLE
+Alignment target
+1
+Alignment state
+INDETERMINATE
+Residual torsion
+BLOCKING_UNKNOWN
+Zero torsion demonstrated
+false
+
+Determination
+HOLD — STAGE — NOT APPEND-ELIGIBLE
+
+This decision does not characterize an unseen or unsubmitted candidate as invalid. It records that the workspace contains a payload specification with placeholder fields but not the populated, canonically committed artifacts needed for a reproducible computation.
+
+Required inputs for a recalculable pass
+A subsequent pass requires a populated canonical payload, Header and Commit Blocks, lineage proof, same-profile ACHP/OTE vectors with normalization rules, authoritative non-forking index proof, and a self-contained substrate manifest.
+
+lkl.go
